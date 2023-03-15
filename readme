@@ -1,0 +1,41 @@
+//Author: Bemnet Merkebu
+//EUID: 11602811
+
+
+- Implementaion of stack using arrays
+    stack.cpp
+        define methods
+        -push (takes a parameterof object type T)
+            increment the index that we want to push our object c
+            then insert the c in the array at the index incremented
+        -pop (no parameters)
+            check if the array is not empty 
+            topIndex is initalized -1, and if there is no element in an array it would be < 0
+            therby checking if topIndex is > 0, we check if empty or not
+                if not empty
+                    return an element at top of the array
+                    then decrement the index
+        -peek (no parameter)
+            check if the array is not empty 
+                return an element at top of the array
+
+    balancing.cpp
+        complete the algorithm in the loop
+        -give the character at the index of itteration from the string  to variable c 
+        - condidtion 1 (check if the characters are opening , '{', '[', '(')
+            then 
+                push to stack
+            
+        - condition 2 (check if the characters are closing , '}', ']', ')')
+            then 
+                check if stack is empty
+                    then its not balanced 
+                check if the top of stack and the current character are not complemntary ('{' and ']' or '(' and '}')
+                    then its not balanced
+
+
+    postfixEval.cpp
+        complete the algorithm in the loop
+
+    infix2postfix.cpp
+        complete the algorithm in the loop
